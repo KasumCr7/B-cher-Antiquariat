@@ -27,9 +27,13 @@ require_once __DIR__ . '/includes/header.php';
 
         <div class="book-detail-grid">
             <div>
+<<<<<<< HEAD
                 <div class="book-detail-cover" style="overflow:hidden; padding:0;">
                     <img src="<?= BASE_URL ?>/Bilder/onwardDrakeCover.jpg" alt="<?= htmlspecialchars($book['Title']) ?>" style="width:100%; height:100%; object-fit:cover; display:block;">
                 </div>
+=======
+                <div class="book-detail-cover">📖</div>
+>>>>>>> 1b7f64d0a90107df640450038e1321cead41e04f
                 <?php if ($book['verkauft']): ?>
                     <span class="badge badge-sold" style="margin-top:1rem; display:block; text-align:center;">Verkauft</span>
                 <?php else: ?>

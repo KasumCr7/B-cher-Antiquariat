@@ -5,6 +5,7 @@ $currentPath = $_SERVER['REQUEST_URI'];
     <div class="sidebar-title">Navigation</div>
     <nav class="sidebar-nav">
         <a href="<?= BASE_URL ?>/admin/index.php" <?= str_ends_with($currentPath, 'admin/index.php') ? 'class="active"' : '' ?>>
+<<<<<<< HEAD
             <span class="sidebar-icon"></span> Dashboard
         </a>
         <a href="<?= BASE_URL ?>/admin/books.php" <?= str_contains($currentPath, 'admin/books.php') ? 'class="active"' : '' ?>>
@@ -24,3 +25,21 @@ $currentPath = $_SERVER['REQUEST_URI'];
         </a>
     </nav>
 </aside>
+=======
+            <span class="sidebar-icon">📊</span> Dashboard
+        </a>
+        <a href="<?= BASE_URL ?>/admin/books.php" <?= str_contains($currentPath, 'admin/books.php') ? 'class="active"' : '' ?>>
+            <span class="sidebar-icon">📚</span> Bücher verwalten
+        </a>
+        <a href="<?= BASE_URL ?>/admin/customers.php" <?= str_contains($currentPath, 'admin/customers.php') ? 'class="active"' : '' ?>>
+            <span class="sidebar-icon">👥</span> Kundenverwaltung
+        </a>
+        <a href="<?= BASE_URL ?>/index.php">
+            <span class="sidebar-icon">🏠</span> Zur Website
+        </a>
+        <a href="<?= BASE_URL ?>/logout.php" style="margin-top:auto;">
+            <span class="sidebar-icon">🚪</span> Abmelden
+        </a>
+    </nav>
+</aside>
+>>>>>>> 1b7f64d0a90107df640450038e1321cead41e04f

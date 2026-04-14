@@ -6,10 +6,17 @@ requireLogin();
 
 $db = getDb();
 
+<<<<<<< HEAD
 $totalBooks = (int) $db->query('SELECT COUNT(*) FROM buecher')->fetchColumn();
 $soldBooks = (int) $db->query('SELECT COUNT(*) FROM buecher WHERE verkauft = 1')->fetchColumn();
 $availBooks = $totalBooks - $soldBooks;
 $totalCustomers = (int) $db->query('SELECT COUNT(*) FROM kunden')->fetchColumn();
+=======
+$totalBooks    = (int)$db->query('SELECT COUNT(*) FROM buecher')->fetchColumn();
+$soldBooks     = (int)$db->query('SELECT COUNT(*) FROM buecher WHERE verkauft = 1')->fetchColumn();
+$availBooks    = $totalBooks - $soldBooks;
+$totalCustomers = (int)$db->query('SELECT COUNT(*) FROM kunden')->fetchColumn();
+>>>>>>> 1b7f64d0a90107df640450038e1321cead41e04f
 
 require_once dirname(__DIR__) . '/includes/header.php';
 ?>
@@ -53,21 +60,33 @@ require_once dirname(__DIR__) . '/includes/header.php';
         <h2 class="mb-2" style="color:var(--primary);">Schnellzugriff</h2>
         <div class="quick-grid">
             <a href="<?= BASE_URL ?>/admin/books.php" class="quick-card">
+<<<<<<< HEAD
                 <div class="quick-icon"></div>
+=======
+                <div class="quick-icon">📚</div>
+>>>>>>> 1b7f64d0a90107df640450038e1321cead41e04f
                 <div>
                     <div class="quick-title">Bücher verwalten</div>
                     <div class="quick-desc">Bücher hinzufügen, bearbeiten oder löschen</div>
                 </div>
             </a>
             <a href="<?= BASE_URL ?>/admin/customers.php" class="quick-card">
+<<<<<<< HEAD
                 <div class="quick-icon"></div>
+=======
+                <div class="quick-icon">👥</div>
+>>>>>>> 1b7f64d0a90107df640450038e1321cead41e04f
                 <div>
                     <div class="quick-title">Kunden verwalten</div>
                     <div class="quick-desc">Kundendaten einsehen und bearbeiten</div>
                 </div>
             </a>
             <a href="<?= BASE_URL ?>/books.php" class="quick-card">
+<<<<<<< HEAD
                 <div class="quick-icon"></div>
+=======
+                <div class="quick-icon">🔍</div>
+>>>>>>> 1b7f64d0a90107df640450038e1321cead41e04f
                 <div>
                     <div class="quick-title">Sammlung ansehen</div>
                     <div class="quick-desc">Öffentliche Bücherliste aufrufen</div>
@@ -77,4 +96,8 @@ require_once dirname(__DIR__) . '/includes/header.php';
     </div>
 </div>
 
+<<<<<<< HEAD
 <?php require_once dirname(__DIR__) . '/includes/footer.php'; ?>
+=======
+<?php require_once dirname(__DIR__) . '/includes/footer.php'; ?>
+>>>>>>> 1b7f64d0a90107df640450038e1321cead41e04f
